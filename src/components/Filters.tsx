@@ -3,6 +3,7 @@ import { StyleSheet, TouchableOpacity, View } from "react-native";
 import TasksIcon from "../../assets/icons/Tasksicon";
 import { deleteAllTaskBasedOnStatus } from "../database/db";
 import Typography from "./Typography";
+import HisotryIcon from "../../assets/icons/HistoryIcon";
 
 interface FilterProps {
   onFilterChange: (completed: boolean) => void;
@@ -37,7 +38,7 @@ const Filter = ({ onFilterChange, isCompletedFilter }: FilterProps) => {
             ]}
             onPress={() => onFilterChange(true)}
           >
-            <TasksIcon />
+            <HisotryIcon />
           </TouchableOpacity>
         </View>
       </View>
@@ -46,7 +47,7 @@ const Filter = ({ onFilterChange, isCompletedFilter }: FilterProps) => {
       >
         <Typography
           style={{ textDecorationLine: "underline" }}
-          children={"Clear all Tasks"}
+          children={isCompletedFilter ? "Clear History" : "Clear all Tasks"}
         />
       </TouchableOpacity>
     </View>
