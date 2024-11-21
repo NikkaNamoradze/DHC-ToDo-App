@@ -13,11 +13,11 @@ const Search = ({ onSearch }: SearchProps) => {
   return (
     <View style={styles.container}>
       <TextInput
-        style={{ width: "80%" }}
+        style={styles.input}
         placeholder="Search for notes"
         onChangeText={handleChangeText}
       />
-      <View style={{ backgroundColor: "#6A6CE0", padding: 6, borderRadius: 6 }}>
+      <View style={styles.iconContainer}>
         <SearchIcon />
       </View>
     </View>
@@ -34,6 +34,14 @@ const styles = StyleSheet.create({
     marginTop: 16,
     padding: 9,
     marginHorizontal: 20,
+  },
+  input: {
+    width: "80%",
+  },
+  iconContainer: {
+    backgroundColor: "#6A6CE0",
+    padding: 6,
+    borderRadius: 6,
   },
 });
 

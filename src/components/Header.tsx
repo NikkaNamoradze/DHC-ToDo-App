@@ -6,7 +6,7 @@ import Typography from "./Typography";
 const Header = () => {
   return (
     <View style={styles.container}>
-      <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+      <View style={styles.userSection}>
         <PersonIcon />
         <Typography
           children={"James Ronald"}
@@ -27,6 +27,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 30,
     marginHorizontal: 20,
+  },
+  userSection: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
   },
 });
 
