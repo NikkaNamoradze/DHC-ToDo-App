@@ -116,9 +116,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#F6FAFF",
     borderRadius: 12,
     width: "90%",
-    height: "40%",
+    height: "45%",
     alignItems: "center",
-    justifyContent: "space-evenly",
+    justifyContent: "space-around",
   },
   inputContainer: {
     width: "100%",
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 10,
     shadowRadius: 100,
-    elevation: 8,
+    elevation: 1,
   },
   description: {
     width: "90%",
@@ -166,8 +166,8 @@ const styles = StyleSheet.create({
   },
   closeButton: {
     position: "absolute",
-    right: 20,
-    top: 20,
+    right: 15,
+    top: 15,
     padding: 5,
   },
 });

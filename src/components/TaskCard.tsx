@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 10,
     shadowRadius: 100,
-    elevation: 8,
+    elevation: 1,
   },
   description: {
     margin: 12,
