@@ -5,7 +5,9 @@ import ArrowUpIcon from "../../assets/icons/ArrowUpIcon";
 import CompleteIcon from "../../assets/icons/CompleteIcon";
 import DeleteIcon from "../../assets/icons/DeleteIcon";
 import EditIcon from "../../assets/icons/EditIcon";
-import { deleteTask, Task, toggleTaskCompletion } from "../database/db";
+import { deleteTask } from "../db/tasks/delete";
+import { Task } from "../db/types/types";
+import { toggleTaskCompletion } from "../db/utils/utils";
 import Typography from "./Typography";
 
 interface TaskCardProps {

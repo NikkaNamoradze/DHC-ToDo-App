@@ -12,7 +12,9 @@ import Filter from "../components/Filters";
 import Header from "../components/Header";
 import Search from "../components/Search";
 import TaskCard from "../components/TaskCard";
-import { deleteTask, searchTasks, Task } from "../database/db";
+import { searchTasks } from "../db/tasks/create";
+import { deleteTask } from "../db/tasks/delete";
+import { Task } from "../db/types/types";
 
 const TasksScreen = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

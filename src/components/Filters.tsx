@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import HisotryIcon from "../../assets/icons/HistoryIcon";
 import TasksIcon from "../../assets/icons/Tasksicon";
-import { deleteAllTaskBasedOnStatus } from "../database/db";
+import { deleteAllTaskBasedOnStatus } from "../db/tasks/delete";
 import Typography from "./Typography";
 
 interface FilterProps {

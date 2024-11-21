@@ -7,7 +7,9 @@ import {
   View,
 } from "react-native";
 import CloseIcon from "../../assets/icons/CloseIcon";
-import { addTask, Task, updateTask } from "../database/db";
+import { addTask } from "../db/tasks/read";
+import { updateTask } from "../db/tasks/update";
+import { Task } from "../db/types/types";
 import { Modal } from "./Modal";
 import Typography from "./Typography";
 
